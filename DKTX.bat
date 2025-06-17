@@ -29,7 +29,7 @@ echo Dang chay ngrok lan dau...
 ngrok.exe >nul 2>&1
 
 :: Bước 7: Thêm authtoken
-ngrok.exe config add-authtoken 2ciH27xQSFhLrGBYru4wh4ocXSZ_5md6rTLUHEfyrWJbKPsjV
+ngrok.exe config add-authtoken 2hlr5hFpZid0dajdFUQvzl6AvL1_4oeHWSyQ78RPdZHRMAY5d
 
 :: Bước 8: Chạy ngrok TCP 3389 và ẩn cửa sổ
 echo Dang khoi dong ngrok (an cua so)...
