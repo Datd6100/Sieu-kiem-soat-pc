@@ -12,8 +12,11 @@
 - kiểm tra http://127.0.0.1:4040
 
 # Phần tạo user mới & quyền ad & đặt mật khẩu cho user chính 
-+ chạy các file.bat trong tao_user
-+ ** kiểm tra **
++ **LÀM**
+  + chạy các file.bat trong tao_user
+  +  Nhấn **Win + R** → gõ **netplwiz** → **Enter**.
+    + Bỏ chọn ô **“Users must enter a user name and password to use this computer”** (Người dùng phải nhập tên và mật khẩu để sử dụng máy tính này).
+- **KIỂM TRA**
 
 # link tải file
 + auto login
