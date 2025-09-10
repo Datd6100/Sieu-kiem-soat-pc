@@ -13,7 +13,7 @@
 
 # Phần tạo user mới & quyền ad & đặt mật khẩu cho user chính 
 + chạy các file.bat trong tao_user
-+ # kiểm tra 
++ ** kiểm tra **
 
 # link tải file
 + auto login
