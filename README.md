@@ -4,7 +4,7 @@
 + Phần 1 ngrok
 + Phần 2 tạo user mới & quyền ad
 + Phần 3 RDP WRAPPER & THIẾT LẬP
-+ Phần 4
++ Phần 4 auto login 
 
 # PHẦN CÀI NGROK & TDMC 3356
 - kiểm tra thư mục shell:common startup
