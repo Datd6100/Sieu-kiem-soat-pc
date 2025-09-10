@@ -16,7 +16,8 @@
   + chạy các file.bat trong tao_user
   +  Nhấn **Win + R** → gõ **netplwiz** → **Enter**.
     + Bỏ chọn ô **“Users must enter a user name and password to use this computer”** (Người dùng phải nhập tên và mật khẩu để sử dụng máy tính này).
-    + nếu không có phần ô trên chạy file.reg và vào lại 
+    + nếu không có phần ô trên chạy file.reg và vào lại
+![file.reg](https://github.com/Datd6100/Sieu-kiem-soat-pc/blob/main/Chong_phat_hien/hien_o_autologin.reg)
 - **KIỂM TRA**
   + trong netplwiz có User: PCTH
   + Bỏ chọn ô **“Users must enter a user name and password to use this computer”**
