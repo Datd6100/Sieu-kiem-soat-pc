@@ -12,7 +12,8 @@
 - kiểm tra http://127.0.0.1:4040
 
 # Phần tạo user mới & quyền ad & đặt mật khẩu cho user chính 
-+ chạy các file.bat trong #tao_user#
++ chạy các file.bat trong tao_user
++ # kiểm tra 
 
 # link tải file
 + auto login
