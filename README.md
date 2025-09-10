@@ -12,4 +12,8 @@
 - kiểm tra http://127.0.0.1:4040
 
 # link tải file
-https://learn.microsoft.com/vi-vn/sysinternals/downloads/autologon
++ auto login
+   + https://learn.microsoft.com/vi-vn/sysinternals/downloads/autologon
++ rdp wrap & file fix lỗi
+  + https://github.com/stascorp/rdpwrap
+  + https://github.com/sebaxakerhtc/rdpwrap.ini/blob/master/rdpwrap.ini
