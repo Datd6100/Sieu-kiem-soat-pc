@@ -16,8 +16,11 @@
   + chạy các file.bat trong tao_user
   +  Nhấn **Win + R** → gõ **netplwiz** → **Enter**.
     + Bỏ chọn ô **“Users must enter a user name and password to use this computer”** (Người dùng phải nhập tên và mật khẩu để sử dụng máy tính này).
+    + nếu không có phần ô trên chạy file.reg và vào lại 
 - **KIỂM TRA**
-
+  + trong netplwiz có User: PCTH
+  + Bỏ chọn ô **“Users must enter a user name and password to use this computer”**
+  + khởi động lại máy có cần **mật khẩu cho user chính** không 
 # link tải file
 + auto login
    + https://learn.microsoft.com/vi-vn/sysinternals/downloads/autologon
