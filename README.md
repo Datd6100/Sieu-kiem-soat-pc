@@ -5,7 +5,8 @@
 + Phần 2 tạo user mới & quyền ad & đặt mật khẩu cho user chính 
 + Phần 3 RDP WRAPPER & THIẾT LẬP
 + Phần 4 auto login
-+ phần tải theo link
++ Phần tải theo link
++ Phần khác 
 
 # PHẦN CÀI NGROK & TDMC 3356
 - kiểm tra thư mục shell:common startup
@@ -28,3 +29,28 @@
 + rdp wrap & file fix lỗi
   + https://github.com/stascorp/rdpwrap
   + https://github.com/sebaxakerhtc/rdpwrap.ini/blob/master/rdpwrap.ini
+# phần khác 
+🔹 **Cách làm: Dùng Session Shadowing**
+
+Windows hỗ trợ tính năng này sẵn, nhưng chỉ trong bản Pro/Enterprise/Education.
+Với RDP Wrapper, bạn có thể bật dễ hơn.
+**✅ Thiết lập trong RDP Wrapper**
+
+**1. Mở RDPConf.exe.**
+**2. Trong mục Session Shadowing Mode, chọn:**
+> Full access without permission → vào chung session, bạn toàn quyền điều khiển, người dùng không cần chấp nhận.
+> Hoặc Full access with user’s permission → khi kết nối sẽ hiện popup cho user xác nhận.
+**3. Lưu cài đặt, rồi Restart TermService.**
+
+✅ Kết nối vào session đang chạy
+
+**1. Lấy ID phiên (Session ID) của user hiện tại:**
+Mở CMD → gõ:
+> query session
++ Sẽ thấy tên user, trạng thái, và số ID (ví dụ: 1).
+**2. Dùng lệnh shadow để vào chung session:**
+> mstsc /shadow:1 /control /noConsentPrompt
+
+/shadow:1 → số ID của session cần vào.
+/control → cho phép điều khiển, không chỉ xem.
+/noConsentPrompt → không cần user đồng ý (chỉ khi bạn chọn “without permission”).
