@@ -1,6 +1,6 @@
 
-# Sieu-kiem-soat-pc
-# Các phần cài 
+# *Sieu-kiem-soat-pc*
+# Các phần
 + Phần 1 ngrok
 + Phần 2 tạo user mới & quyền ad & đặt mật khẩu cho user chính 
 + Phần 3 RDP WRAPPER & THIẾT LẬP
@@ -30,6 +30,7 @@
   + https://github.com/stascorp/rdpwrap
   + https://github.com/sebaxakerhtc/rdpwrap.ini/blob/master/rdpwrap.ini
 # phần khác 
++ # 2 RDP VÔ 1 user trong một phiên 
 🔹 **Cách làm: Dùng Session Shadowing**
 
 + **✅ Thiết lập trong RDP Wrapper**
@@ -40,15 +41,15 @@
     + > Hoặc Full access with user’s permission → khi kết nối sẽ hiện popup cho user xác nhận.
   + **3. Lưu cài đặt, rồi Restart TermService.**
 
-✅ Kết nối vào session đang chạy
++ **✅ Kết nối vào session đang chạy**
 
-**1. Lấy ID phiên (Session ID) của user hiện tại:**
-Mở CMD → gõ:
-> query session
-+ Sẽ thấy tên user, trạng thái, và số ID (ví dụ: 1).
-**2. Dùng lệnh shadow để vào chung session:**
-> mstsc /shadow:1 /control /noConsentPrompt
+  + **1. Lấy ID phiên (Session ID) của user hiện tại:**
+    + Mở CMD → gõ:
+      > query session
+    + Sẽ thấy tên user, trạng thái, và số ID (ví dụ: 1)
+  + **2. lệnh shadow để vào chung session:**
+    + > mstsc /shadow:1 /control /noConsentPrompt
 
-/shadow:1 → số ID của session cần vào.
-/control → cho phép điều khiển, không chỉ xem.
-/noConsentPrompt → không cần user đồng ý (chỉ khi bạn chọn “without permission”).
++ > */shadow:1 → số ID của session cần vào.*
++ > */control → cho phép điều khiển, không chỉ xem.*
++ > */noConsentPrompt → không cần user đồng ý (chỉ khi bạn chọn “without permission”).*
