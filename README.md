@@ -32,15 +32,13 @@
 # phần khác 
 🔹 **Cách làm: Dùng Session Shadowing**
 
-Windows hỗ trợ tính năng này sẵn, nhưng chỉ trong bản Pro/Enterprise/Education.
-Với RDP Wrapper, bạn có thể bật dễ hơn.
-**✅ Thiết lập trong RDP Wrapper**
++ **✅ Thiết lập trong RDP Wrapper**
 
-**1. Mở RDPConf.exe.**
-**2. Trong mục Session Shadowing Mode, chọn:**
-> Full access without permission → vào chung session, bạn toàn quyền điều khiển, người dùng không cần chấp nhận.
-> Hoặc Full access with user’s permission → khi kết nối sẽ hiện popup cho user xác nhận.
-**3. Lưu cài đặt, rồi Restart TermService.**
+  + **1. Mở RDPConf.exe.**
+  + **2. Trong mục Session Shadowing Mode, chọn:**
+    + > Full access without permission → vào chung session, bạn toàn quyền điều khiển, người dùng không cần chấp nhận.
+    + > Hoặc Full access with user’s permission → khi kết nối sẽ hiện popup cho user xác nhận.
+  + **3. Lưu cài đặt, rồi Restart TermService.**
 
 ✅ Kết nối vào session đang chạy
 
